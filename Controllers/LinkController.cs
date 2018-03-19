@@ -37,6 +37,13 @@ namespace LinkShortener.Controllers
             _repository.Delete(link);
             return Redirect("Index");
         }
+
+        [HttpGet]
+        public IActionResult MyRedirect(Link link)
+        {
+            return new RedirectController().MyRedirect(link);
+        }
+
         private static int Adler32(string str)
         {
             const int mod = 65521;

@@ -11,7 +11,7 @@
         @foreach(var item in Model) {
             <tr>
                 <td><strong>@Html.DisplayNameFor(model => item.fullLink):</strong></td>
-                <td>@Html.DisplayFor(model => item.fullLink),</td>
+                <td>@Html.ActionLink(item.fullLink, "MyRedirect", "Redirect", item)</td>
                 <td><strong>@Html.DisplayNameFor(model => item.shortLink):</strong></td>
                 <td>@Html.DisplayFor(model => item.shortLink)</td>
                 <td>| @Html.ActionLink("Delete", "Delete", "Link", item)</td>

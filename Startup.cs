@@ -42,6 +42,7 @@ namespace LinkShortener
                 routes.MapRoute(
                     name: "default",
                     template: "{controller=Link}/{action=Index}");
+                    
             });
         }
     }
