@@ -27,5 +27,12 @@ namespace LinkShortener.Controllers
             _repository.AddLink(link);
             return Redirect("Index");
         }
+
+        [HttpGet]
+        public IActionResult Delete(Link link)
+        {
+            _repository.Delete(link);
+            return Redirect("Index");
+        }
     }
 }
