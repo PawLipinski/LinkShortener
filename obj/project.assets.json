@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.0": {
+      "Hashids.net/1.2.2": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.0/Hashids.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Hashids.net.dll": {}
+        }
+      },
       "Libuv/1.10.0": {
         "type": "package",
         "dependencies": {
@@ -4750,6 +4762,18 @@
     }
   },
   "libraries": {
+    "Hashids.net/1.2.2": {
+      "sha512": "2GkaIvkV3aISnSzNjgkd9h9BX0I/In5kaw9MROlmgNmx2h6nVcANh7O7GFa9FOz5KYoWsqXRbKHg8oxzeQkFMQ==",
+      "type": "package",
+      "path": "hashids.net/1.2.2",
+      "files": [
+        "hashids.net.1.2.2.nupkg.sha512",
+        "hashids.net.nuspec",
+        "lib/net40/Hashids.net.dll",
+        "lib/net45/Hashids.net.dll",
+        "lib/netstandard1.0/Hashids.net.dll"
+      ]
+    },
     "Libuv/1.10.0": {
       "sha512": "GsCf4q+eyaI49rCPlgYxdxa1SQCysXFFdSJWdstrwxytg4+VPYLYrXD4AT2rjHVJ+UF7SSWX9CapWEYaU4ejVQ==",
       "type": "package",
@@ -12531,7 +12555,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
       "Microsoft.AspNetCore.All >= 2.0.5",
-      "Microsoft.NETCore.App >= 2.0.0"
+      "Microsoft.NETCore.App >= 2.0.0",
+      "hashids.net >= 1.2.2"
     ]
   },
   "packageFolders": {
@@ -12581,6 +12606,10 @@
             "target": "Package",
             "version": "[2.0.0, )",
             "autoReferenced": true
+          },
+          "hashids.net": {
+            "target": "Package",
+            "version": "[1.2.2, )"
           }
         },
         "imports": [
