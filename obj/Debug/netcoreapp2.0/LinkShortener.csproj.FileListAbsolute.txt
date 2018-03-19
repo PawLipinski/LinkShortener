@@ -8,3 +8,13 @@ C:\Users\pawel.lipinski\Documents\Akademia\LinkShortener\obj\Debug\netcoreapp2.0
 C:\Users\pawel.lipinski\Documents\Akademia\LinkShortener\obj\Debug\netcoreapp2.0\LinkShortener.AssemblyInfo.cs
 C:\Users\pawel.lipinski\Documents\Akademia\LinkShortener\obj\Debug\netcoreapp2.0\LinkShortener.dll
 C:\Users\pawel.lipinski\Documents\Akademia\LinkShortener\obj\Debug\netcoreapp2.0\LinkShortener.pdb
+D:\AkademiaCore\LinkShortener\bin\Debug\netcoreapp2.0\LinkShortener.deps.json
+D:\AkademiaCore\LinkShortener\bin\Debug\netcoreapp2.0\LinkShortener.runtimeconfig.json
+D:\AkademiaCore\LinkShortener\bin\Debug\netcoreapp2.0\LinkShortener.runtimeconfig.dev.json
+D:\AkademiaCore\LinkShortener\bin\Debug\netcoreapp2.0\LinkShortener.dll
+D:\AkademiaCore\LinkShortener\bin\Debug\netcoreapp2.0\LinkShortener.pdb
+D:\AkademiaCore\LinkShortener\obj\Debug\netcoreapp2.0\LinkShortener.csproj.CoreCompileInputs.cache
+D:\AkademiaCore\LinkShortener\obj\Debug\netcoreapp2.0\LinkShortener.AssemblyInfoInputs.cache
+D:\AkademiaCore\LinkShortener\obj\Debug\netcoreapp2.0\LinkShortener.AssemblyInfo.cs
+D:\AkademiaCore\LinkShortener\obj\Debug\netcoreapp2.0\LinkShortener.dll
+D:\AkademiaCore\LinkShortener\obj\Debug\netcoreapp2.0\LinkShortener.pdb

@@ -26,5 +26,10 @@ namespace LinkShortener.Repository
             _links.Remove(linkToDelete);
         }
 
+        public static List<Link> GetLinksStatic()
+        {
+            return _links;
+        }
+
     }
 }

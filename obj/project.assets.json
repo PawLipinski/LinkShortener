@@ -5808,17 +5808,17 @@
       ]
     },
     "Microsoft.CodeAnalysis.Analyzers/1.1.0": {
-      "sha512": "HS3iRWZKcUw/8eZ/08GXKY2Bn7xNzQPzf8gRPHGSowX7u7XXu9i9YEaBeBNKUXWfI7qjvT2zXtLUvbN0hds8vg==",
+      "sha512": "YHX4qyD1r/kgyOn1GLeGfjgjp/pj9bLLCw59Qvha3YhwTOCfh7wUMu+i+UgLcW+wHv5H0deWVex7lhGAwyzTYw==",
       "type": "package",
       "path": "microsoft.codeanalysis.analyzers/1.1.0",
       "files": [
+        "Microsoft.CodeAnalysis.Analyzers.1.1.0.nupkg.sha512",
+        "Microsoft.CodeAnalysis.Analyzers.nuspec",
         "ThirdPartyNotices.rtf",
         "analyzers/dotnet/cs/Microsoft.CodeAnalysis.Analyzers.dll",
         "analyzers/dotnet/cs/Microsoft.CodeAnalysis.CSharp.Analyzers.dll",
         "analyzers/dotnet/vb/Microsoft.CodeAnalysis.Analyzers.dll",
         "analyzers/dotnet/vb/Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll",
-        "microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",
-        "microsoft.codeanalysis.analyzers.nuspec",
         "tools/install.ps1",
         "tools/uninstall.ps1"
       ]
@@ -9620,10 +9620,12 @@
       ]
     },
     "System.Linq.Queryable/4.0.1": {
-      "sha512": "Yn/WfYe9RoRfmSLvUt2JerP0BTGGykCZkQPgojaxgzF2N0oPo+/AhB8TXOpdCcNlrG3VRtsamtK2uzsp3cqRVw==",
+      "sha512": "/APtvvAnWsch+oKjjwgu/Eb5Tjrj4jFeG6wEw3fxbxTZwy3G4qRuvqbLwUbuMpsi8Hr15gvVtybsUMWBV1GiZA==",
       "type": "package",
       "path": "system.linq.queryable/4.0.1",
       "files": [
+        "System.Linq.Queryable.4.0.1.nupkg.sha512",
+        "System.Linq.Queryable.nuspec",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/monoandroid10/_._",
@@ -9671,9 +9673,7 @@
         "ref/xamarinios10/_._",
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.linq.queryable.4.0.1.nupkg.sha512",
-        "system.linq.queryable.nuspec"
+        "ref/xamarinwatchos10/_._"
       ]
     },
     "System.Net.Http/4.3.0": {
@@ -12560,23 +12560,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pawel.lipinski\\.nuget\\packages\\": {},
+    "C:\\Users\\Paweł_2\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pawel.lipinski\\Documents\\Akademia\\LinkShortener\\LinkShortener.csproj",
+      "projectUniqueName": "D:\\AkademiaCore\\LinkShortener\\LinkShortener.csproj",
       "projectName": "LinkShortener",
-      "projectPath": "C:\\Users\\pawel.lipinski\\Documents\\Akademia\\LinkShortener\\LinkShortener.csproj",
-      "packagesPath": "C:\\Users\\pawel.lipinski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pawel.lipinski\\Documents\\Akademia\\LinkShortener\\obj\\",
+      "projectPath": "D:\\AkademiaCore\\LinkShortener\\LinkShortener.csproj",
+      "packagesPath": "C:\\Users\\Paweł_2\\.nuget\\packages\\",
+      "outputPath": "D:\\AkademiaCore\\LinkShortener\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\pawel.lipinski\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Paweł_2\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
