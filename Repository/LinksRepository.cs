@@ -7,9 +7,7 @@ namespace LinkShortener.Repository
 {
     public class LinksRepository : ILinksRepository
     {
-        public static List<Link> _links = new List<Link>{
-            new Link {fullLink = "fasefafasfasf", shortLink= "afse"}
-        };
+        public static List<Link> _links = new List<Link>();
 
         public void AddLink(Link link)
         {
