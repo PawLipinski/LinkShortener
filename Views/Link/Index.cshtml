@@ -13,7 +13,7 @@
                 <td><strong>@Html.DisplayNameFor(model => item.fullLink):</strong></td>
                 <td>@Html.ActionLink(item.fullLink, "MyRedirect", "Redirect", item)</td>
                 <td><strong>@Html.DisplayNameFor(model => item.shortLink):</strong></td>
-                <td>@Html.DisplayFor(model => item.shortLink)</td>
+                <td>@Html.ActionLink(item.shortLink, "MyRedirect","Redirect", item)</td>
                 <td>| @Html.ActionLink("Delete", "Delete", "Link", item)</td>
             </tr>
         }

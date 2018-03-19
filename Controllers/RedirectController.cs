@@ -5,9 +5,10 @@ namespace LinkShortener.Controllers
 {
     public class RedirectController: Controller
     {
+        [Route("shortLink")]
         public IActionResult MyRedirect(Link link)
         {
-            return Redirect("Http://" + link.fullLink);
+            return Redirect("http://" + link.fullLink);
         }
     }
 }

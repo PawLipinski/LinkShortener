@@ -38,10 +38,11 @@ namespace LinkShortener.Controllers
             return Redirect("Index");
         }
 
+        [Route("shortLink")]
         [HttpGet]
         public IActionResult MyRedirect(Link link)
         {
-            return new RedirectController().MyRedirect(link);
+            return Redirect(link.shortLink);
         }
 
         private static int Adler32(string str)
