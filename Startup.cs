@@ -44,7 +44,7 @@ namespace LinkShortener
                     template: "{controller=Link}/{action=Index}");
                 routes.MapRoute(
                     "external",
-                    "{shortLink}",
+                    "{*shortLink}",
                     new { controller = "Redirect", action = "RedirectByAddress" }
                 );
             });

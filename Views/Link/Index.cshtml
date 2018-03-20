@@ -10,6 +10,7 @@
     <table>
         @foreach(var item in Model) {
             <tr>
+                <td>@Html.DisplayFor(model => item.ID)</td>
                 <td><strong>@Html.DisplayNameFor(model => item.fullLink):</strong></td>
                 <td>@Html.ActionLink(item.fullLink, "MyRedirectFull", "Redirect", item)</td>
                 <td><strong>@Html.DisplayNameFor(model => item.shortLink):</strong></td>

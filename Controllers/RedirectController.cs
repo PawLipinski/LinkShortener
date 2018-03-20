@@ -9,13 +9,13 @@ namespace LinkShortener.Controllers
         [Route("shortLink")]
         public IActionResult MyRedirectShort(Link link)
         {
-            return Redirect("http://" + link.fullLink);
+            return Redirect(link.shortLink);
         }
 
         [Route("fullLink")]
         public IActionResult MyRedirectFull(Link link)
         {
-            return Redirect("http://" + link.fullLink);
+            return Redirect(link.shortLink);
         }
 
         public IActionResult RedirectByAddress(string shortLink)

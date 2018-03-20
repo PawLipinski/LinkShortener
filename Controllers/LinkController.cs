@@ -11,10 +11,13 @@ namespace LinkShortener.Controllers
     public class LinkController : Controller
     {
         private ILinksRepository _repository;
+        private static int count;
+        private static int Count{ get{return count;}}
 
         public LinkController(ILinksRepository linkRepository)
         {
             _repository = linkRepository;
+            count = 0;
         }
 
         [HttpGet]
@@ -28,13 +31,9 @@ namespace LinkShortener.Controllers
         public IActionResult Create(Link link)
         {
             var hashids = new Hashids();
-            // string pattern = @"^(http|https|ftp|)\://|[a-zA-Z0-9\-\.]+\.[a-zA-Z](:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*[^\.\,\)\(\s]$";
-            // Regex reg = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
-            // if (reg.IsMatch(link.fullLink)){
-
-                link.shortLink = hashids.Encode(Adler32(link.fullLink));
-                _repository.AddLink(link);   
-            // }
+            LinkController.count+=1;
+            link.shortLink = hashids.Encode(Adler32(link.fullLink));
+            _repository.AddLink(link);   
             
             return Redirect("Index");
         }
