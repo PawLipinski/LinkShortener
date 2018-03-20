@@ -2,7 +2,7 @@
 <div>
     @using (Html.BeginForm("Create", "Link", FormMethod.Post))
     {
-        <input type="text" name="fullLink" placeholder="fullLink"/> <br/>
+        <input type="text" name="fullLink" placeholder="Full Url" pattern="w{3}\.[a-zA-Z0-9]+\.?[a-z]{2,3}(|\.[a-z]{2,3})" /> <br/>
         <button type="submit">Add</button>
     }
 </div>  

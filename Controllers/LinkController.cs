@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using LinkShortener.Interfaces;
 using LinkShortener.Models;
 using HashidsNet;
+using System;
+using System.Text.RegularExpressions;
 
 namespace LinkShortener.Controllers
 {
@@ -26,8 +28,14 @@ namespace LinkShortener.Controllers
         public IActionResult Create(Link link)
         {
             var hashids = new Hashids();
-            link.shortLink = hashids.Encode(Adler32(link.fullLink));
-            _repository.AddLink(link);
+            // string pattern = @"^(http|https|ftp|)\://|[a-zA-Z0-9\-\.]+\.[a-zA-Z](:[a-zA-Z0-9]*)?/?([a-zA-Z0-9\-\._\?\,\'/\\\+&amp;%\$#\=~])*[^\.\,\)\(\s]$";
+            // Regex reg = new Regex(pattern, RegexOptions.Compiled | RegexOptions.IgnoreCase);
+            // if (reg.IsMatch(link.fullLink)){
+
+                link.shortLink = hashids.Encode(Adler32(link.fullLink));
+                _repository.AddLink(link);   
+            // }
+            
             return Redirect("Index");
         }
 
